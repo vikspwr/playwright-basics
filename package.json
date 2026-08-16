@@ -1,0 +1,20 @@
+{
+  "name": "pw-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "last-failed": "powershell -Command \"if (Select-String -Path 'test-results/.last-run.json' -Pattern '\\\"failedTests\\\":\\s*\\[\\s*\\]' -Quiet) { Write-Host 'No failed test(s) found! Skipping execution.' -ForegroundColor Green } else { Write-Host 'Failures detected. Rerunning failed test(s)...' -ForegroundColor Yellow; npx playwright test --last-failed }\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@types/node": "^26.1.1",
+    "dotenv": "^17.4.2",
+    "eslint": "^10.8.0"
+  }
+}

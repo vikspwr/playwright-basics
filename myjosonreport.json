@@ -1,0 +1,144 @@
+{
+  "config": {
+    "argv": [],
+    "configFile": "G:\\PW-Basics\\playwright.config.ts",
+    "rootDir": "G:/PW-Basics/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "G:/PW-Basics/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "G:/PW-Basics/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "myjosonreport.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "myxmlreport.xml"
+        }
+      ],
+      [
+        "line",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "3way",
+    "version": "1.61.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "d.spec.ts",
+      "file": "d.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "faker library",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 20,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[35m2026-12-09T10:50:08.887Z\u001b[39m\n"
+                    },
+                    {
+                      "text": "\u001b[33m9\u001b[39m\n"
+                    },
+                    {
+                      "text": "\u001b[33m12\u001b[39m\n"
+                    },
+                    {
+                      "text": "\u001b[33m2026\u001b[39m\n"
+                    },
+                    {
+                      "text": "Date : 9/12/2026\n"
+                    },
+                    {
+                      "text": "\u001b[33m0\u001b[39m \u001b[33m17\u001b[39m \u001b[33m8\u001b[39m \u001b[33m2026\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-16T07:51:15.555Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "13822375effbe328c96a-e02d3577e8a98b550173",
+          "file": "d.spec.ts",
+          "line": 8,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-16T07:51:14.044Z",
+    "duration": 1595.8660000003874,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
