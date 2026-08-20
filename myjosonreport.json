@@ -4,7 +4,7 @@
       "C:\\Program Files\\nodejs\\node.exe",
       "G:\\PW-Basics\\node_modules\\@playwright\\test\\cli.js",
       "test",
-      "./tests/playwright-annotations.spec.ts"
+      "./tests/test-annotations.spec.ts"
     ],
     "configFile": "G:\\PW-Basics\\playwright.config.ts",
     "rootDir": "G:/PW-Basics/tests",
@@ -76,89 +76,13 @@
   },
   "suites": [
     {
-      "title": "playwright-annotations.spec.ts",
-      "file": "playwright-annotations.spec.ts",
+      "title": "test-annotations.spec.ts",
+      "file": "test-annotations.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Annotation 1 - only",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 7,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "only annotation\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-20T06:16:44.274Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "3c99b70e569ba462bcdd-cfb0627d930e5bbdb710",
-          "file": "playwright-annotations.spec.ts",
-          "line": 6,
-          "column": 1
-        },
-        {
-          "title": "Annotation 2 - skip",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "skip annotation\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-20T06:16:44.357Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "3c99b70e569ba462bcdd-ae34956f7bbf01f2eb3a",
-          "file": "playwright-annotations.spec.ts",
-          "line": 10,
-          "column": 1
-        },
-        {
-          "title": "Annotation 3 - fixme",
+          "title": "Run time annotations",
           "ok": true,
           "tags": [],
           "tests": [
@@ -166,92 +90,34 @@
               "timeout": 30000,
               "annotations": [
                 {
-                  "type": "fixme",
-                  "location": {
-                    "file": "G:\\PW-Basics\\tests\\playwright-annotations.spec.ts",
-                    "line": 16,
-                    "column": 6
-                  }
+                  "type": "Browser Version",
+                  "description": "149.0.7827.55"
+                },
+                {
+                  "type": "ENVIRONMENT"
                 }
               ],
-              "expectedStatus": "skipped",
+              "expectedStatus": "passed",
               "projectId": "chromium",
               "projectName": "chromium",
               "results": [
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "skipped",
-                  "duration": 0,
+                  "status": "passed",
+                  "duration": 5,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-08-20T06:16:44.391Z",
+                  "startTime": "2026-08-20T06:51:02.900Z",
                   "annotations": [
                     {
-                      "type": "fixme",
-                      "location": {
-                        "file": "G:\\PW-Basics\\tests\\playwright-annotations.spec.ts",
-                        "line": 16,
-                        "column": 6
-                      }
-                    }
-                  ],
-                  "attachments": []
-                }
-              ],
-              "status": "skipped"
-            }
-          ],
-          "id": "3c99b70e569ba462bcdd-a61acc0c1a8ee805763a",
-          "file": "playwright-annotations.spec.ts",
-          "line": 16,
-          "column": 6
-        },
-        {
-          "title": "Annotation 4 - slow",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 90000,
-              "annotations": [
-                {
-                  "type": "slow",
-                  "location": {
-                    "file": "G:\\PW-Basics\\tests\\playwright-annotations.spec.ts",
-                    "line": 24,
-                    "column": 10
-                  }
-                }
-              ],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 3,
-                  "errors": [],
-                  "stdout": [
+                      "type": "Browser Version",
+                      "description": "149.0.7827.55"
+                    },
                     {
-                      "text": "slow annotation\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-20T06:16:44.392Z",
-                  "annotations": [
-                    {
-                      "type": "slow",
-                      "location": {
-                        "file": "G:\\PW-Basics\\tests\\playwright-annotations.spec.ts",
-                        "line": 24,
-                        "column": 10
-                      }
+                      "type": "ENVIRONMENT"
                     }
                   ],
                   "attachments": []
@@ -260,77 +126,21 @@
               "status": "expected"
             }
           ],
-          "id": "3c99b70e569ba462bcdd-4923a972b344f617e497",
-          "file": "playwright-annotations.spec.ts",
-          "line": 23,
+          "id": "8ff54ae642c9f388dcb2-65a669b8309cbf99b06c",
+          "file": "test-annotations.spec.ts",
+          "line": 21,
           "column": 1
-        },
-        {
-          "title": "Annotation 5 - fail",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [
-                {
-                  "type": "fail",
-                  "location": {
-                    "file": "G:\\PW-Basics\\tests\\playwright-annotations.spec.ts",
-                    "line": 29,
-                    "column": 6
-                  }
-                }
-              ],
-              "expectedStatus": "failed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 21,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "fail annotation\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-20T06:16:44.423Z",
-                  "annotations": [
-                    {
-                      "type": "fail",
-                      "location": {
-                        "file": "G:\\PW-Basics\\tests\\playwright-annotations.spec.ts",
-                        "line": 29,
-                        "column": 6
-                      }
-                    }
-                  ],
-                  "attachments": []
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "3c99b70e569ba462bcdd-915a672efe0cebd94d59",
-          "file": "playwright-annotations.spec.ts",
-          "line": 29,
-          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-20T06:16:43.230Z",
-    "duration": 1348.413,
-    "expected": 3,
-    "skipped": 1,
-    "unexpected": 1,
+    "startTime": "2026-08-20T06:51:02.094Z",
+    "duration": 1807.5639999999999,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
     "flaky": 0
   }
 }
