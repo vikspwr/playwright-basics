@@ -1,15 +1,50 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="1.5958660000003875">
-<testsuite name="d.spec.ts" timestamp="2026-08-16T07:51:14.837Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.004" errors="0">
-<testcase name="faker library" classname="d.spec.ts" time="0.004">
+<testsuites id="" name="" tests="5" failures="1" skipped="1" errors="0" time="1.348413">
+<testsuite name="playwright-annotations.spec.ts" timestamp="2026-08-20T06:16:43.313Z" hostname="chromium" tests="5" failures="1" skipped="1" time="0.033" errors="0">
+<testcase name="Annotation 1 - only" classname="playwright-annotations.spec.ts" time="0.007">
 <system-out>
-<![CDATA[[35m2026-12-09T10:50:08.887Z[39m
-[33m9[39m
-[33m12[39m
-[33m2026[39m
-Date : 9/12/2026
-[33m0[39m [33m17[39m [33m8[39m [33m2026[39m
+<![CDATA[only annotation
 ]]>
 </system-out>
+</testcase>
+<testcase name="Annotation 2 - skip" classname="playwright-annotations.spec.ts" time="0.002">
+<system-out>
+<![CDATA[skip annotation
+]]>
+</system-out>
+</testcase>
+<testcase name="Annotation 3 - fixme" classname="playwright-annotations.spec.ts">
+<properties>
+<property name="fixme" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Annotation 4 - slow" classname="playwright-annotations.spec.ts" time="0.003">
+<properties>
+<property name="slow" value="">
+</property>
+</properties>
+<system-out>
+<![CDATA[slow annotation
+]]>
+</system-out>
+</testcase>
+<testcase name="Annotation 5 - fail" classname="playwright-annotations.spec.ts" time="0.021">
+<properties>
+<property name="fail" value="">
+</property>
+</properties>
+<system-out>
+<![CDATA[fail annotation
+]]>
+</system-out>
+<failure message="playwright-annotations.spec.ts:29:6 Annotation 5 - fail" type="FAILURE">
+<![CDATA[  [chromium] › playwright-annotations.spec.ts:29:6 › Annotation 5 - fail ───────────────────────────
+
+    Expected to fail, but passed.
+]]>
+</failure>
 </testcase>
 </testsuite>
 </testsuites>
