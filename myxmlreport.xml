@@ -1,10 +1,18 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="1.807564">
-<testsuite name="test-annotations.spec.ts" timestamp="2026-08-20T06:51:02.133Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.005" errors="0">
-<testcase name="Run time annotations" classname="test-annotations.spec.ts" time="0.005">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="0.895857">
+<testsuite name="test-annotations.spec.ts" timestamp="2026-08-20T08:21:19.417Z" hostname="chromium" tests="2" failures="0" skipped="0" time="0.003" errors="0">
+<testcase name="Login Test Case" classname="test-annotations.spec.ts" time="0.002">
+<properties>
+<property name="functional issue" value="Login button is not clickable so ignore the failure of the test case for now, created incident with id 1234">
+</property>
+<property name="performance issue" value="Test case performance needs to be improved, created incident with id 5678">
+</property>
+</properties>
+</testcase>
+<testcase name="Run time annotations" classname="test-annotations.spec.ts" time="0.001">
 <properties>
 <property name="Browser Version" value="149.0.7827.55">
 </property>
-<property name="ENVIRONMENT" value="">
+<property name="ENVIRONMENT" value="Systest">
 </property>
 </properties>
 </testcase>

@@ -82,6 +82,78 @@
       "line": 0,
       "specs": [
         {
+          "title": "Login Test Case",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "functional issue",
+                  "description": "Login button is not clickable so ignore the failure of the test case for now, created incident with id 1234",
+                  "location": {
+                    "file": "G:\\PW-Basics\\tests\\test-annotations.spec.ts",
+                    "line": 7,
+                    "column": 1
+                  }
+                },
+                {
+                  "type": "performance issue",
+                  "description": "Test case performance needs to be improved, created incident with id 5678",
+                  "location": {
+                    "file": "G:\\PW-Basics\\tests\\test-annotations.spec.ts",
+                    "line": 7,
+                    "column": 1
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-20T08:21:19.868Z",
+                  "annotations": [
+                    {
+                      "type": "functional issue",
+                      "description": "Login button is not clickable so ignore the failure of the test case for now, created incident with id 1234",
+                      "location": {
+                        "file": "G:\\PW-Basics\\tests\\test-annotations.spec.ts",
+                        "line": 7,
+                        "column": 1
+                      }
+                    },
+                    {
+                      "type": "performance issue",
+                      "description": "Test case performance needs to be improved, created incident with id 5678",
+                      "location": {
+                        "file": "G:\\PW-Basics\\tests\\test-annotations.spec.ts",
+                        "line": 7,
+                        "column": 1
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8ff54ae642c9f388dcb2-4673399b74bf40c677b8",
+          "file": "test-annotations.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
           "title": "Run time annotations",
           "ok": true,
           "tags": [],
@@ -94,7 +166,8 @@
                   "description": "149.0.7827.55"
                 },
                 {
-                  "type": "ENVIRONMENT"
+                  "type": "ENVIRONMENT",
+                  "description": "Systest"
                 }
               ],
               "expectedStatus": "passed",
@@ -105,19 +178,20 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5,
+                  "duration": 1,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-08-20T06:51:02.900Z",
+                  "startTime": "2026-08-20T08:21:19.904Z",
                   "annotations": [
                     {
                       "type": "Browser Version",
                       "description": "149.0.7827.55"
                     },
                     {
-                      "type": "ENVIRONMENT"
+                      "type": "ENVIRONMENT",
+                      "description": "Systest"
                     }
                   ],
                   "attachments": []
@@ -136,9 +210,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-20T06:51:02.094Z",
-    "duration": 1807.5639999999999,
-    "expected": 1,
+    "startTime": "2026-08-20T08:21:19.390Z",
+    "duration": 895.857,
+    "expected": 2,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

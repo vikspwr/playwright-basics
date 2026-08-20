@@ -30,7 +30,7 @@ test("Run time annotations", ({ browser }) => {
     test.info().annotations.push({
 
         type: "ENVIRONMENT",
-        description: process.env.EXECUTION_ENV! || 'preprod',
+        description: (process.env.EXECUTION_ENV!).trim() || 'preprod',
 
     });
 
