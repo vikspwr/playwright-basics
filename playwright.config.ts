@@ -21,11 +21,11 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['html'],
-    ['json', { outputFile: 'myjosonreport.json' }],
-    ['junit', { outputFile: 'myxmlreport.xml' }],
+    // ['json', { outputFile: 'myjosonreport.json' }],
+    // ['junit', { outputFile: 'myxmlreport.xml' }],
     //['dot'],
     //['list'],
-    ['line'],
+    // ['line'],
 
 
   ],
@@ -40,6 +40,7 @@ export default defineConfig({
     trace: 'on-first-retry',
     headless: false,
     //video: 'on'
+
 
   },
 
