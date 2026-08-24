@@ -1,9 +1,19 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="9.572765000000595">
-<testsuite name="browser-sessions.spec.ts" timestamp="2026-08-24T06:37:11.765Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.395" errors="0">
-<testcase name="Open browser in dark mode" classname="browser-sessions.spec.ts" time="7.395">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="1.5257460000002756">
+<testsuite name="generate-fake-data.spec.ts" timestamp="2026-08-24T06:56:02.955Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.009" errors="0">
+<testcase name="Generate fake data" classname="generate-fake-data.spec.ts" time="0.009">
 <system-out>
-<![CDATA[https://rahulshettyacademy.com/seleniumPractise/#/
-https://rahulshettyacademy.com/seleniumPractise/#/offers
+<![CDATA[Dannie
+Claud Zieme
+Gender fluid
+Michaelafield
+Saint Lucia
+Schinner - Bauch
+[35m2026-10-30T06:51:44.475Z[39m
+[35m2025-12-10T07:15:11.550Z[39m
+Doreen.Krajcik@yahoo.com
+B691acr61Tt3PbL
+3561
+{ name: [32m'Airbus A320'[39m, iataTypeCode: [32m'320'[39m }
 ]]>
 </system-out>
 </testcase>

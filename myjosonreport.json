@@ -71,13 +71,13 @@
   },
   "suites": [
     {
-      "title": "browser-sessions.spec.ts",
-      "file": "browser-sessions.spec.ts",
+      "title": "generate-fake-data.spec.ts",
+      "file": "generate-fake-data.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Open browser in dark mode",
+          "title": "Generate fake data",
           "ok": true,
           "tags": [],
           "tests": [
@@ -89,22 +89,52 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 14,
+                  "workerIndex": 42,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7395,
+                  "duration": 9,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "https://rahulshettyacademy.com/seleniumPractise/#/\n"
+                      "text": "Dannie\n"
                     },
                     {
-                      "text": "https://rahulshettyacademy.com/seleniumPractise/#/offers\n"
+                      "text": "Claud Zieme\n"
+                    },
+                    {
+                      "text": "Gender fluid\n"
+                    },
+                    {
+                      "text": "Michaelafield\n"
+                    },
+                    {
+                      "text": "Saint Lucia\n"
+                    },
+                    {
+                      "text": "Schinner - Bauch\n"
+                    },
+                    {
+                      "text": "\u001b[35m2026-10-30T06:51:44.475Z\u001b[39m\n"
+                    },
+                    {
+                      "text": "\u001b[35m2025-12-10T07:15:11.550Z\u001b[39m\n"
+                    },
+                    {
+                      "text": "Doreen.Krajcik@yahoo.com\n"
+                    },
+                    {
+                      "text": "B691acr61Tt3PbL\n"
+                    },
+                    {
+                      "text": "3561\n"
+                    },
+                    {
+                      "text": "{ name: \u001b[32m'Airbus A320'\u001b[39m, iataTypeCode: \u001b[32m'320'\u001b[39m }\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-08-24T06:37:12.252Z",
+                  "startTime": "2026-08-24T06:56:03.628Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -112,9 +142,9 @@
               "status": "expected"
             }
           ],
-          "id": "24a0e4306e5baf97c5b3-4f1e1eefe5d78b902c85",
-          "file": "browser-sessions.spec.ts",
-          "line": 70,
+          "id": "b87b7f7aa6232c4789e4-45700d75490d45bd38d9",
+          "file": "generate-fake-data.spec.ts",
+          "line": 4,
           "column": 1
         }
       ]
@@ -122,8 +152,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-24T06:37:11.168Z",
-    "duration": 9572.765000000596,
+    "startTime": "2026-08-24T06:56:02.188Z",
+    "duration": 1525.7460000002757,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
