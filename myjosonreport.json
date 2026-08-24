@@ -1,11 +1,6 @@
 {
   "config": {
-    "argv": [
-      "C:\\Program Files\\nodejs\\node.exe",
-      "G:\\PW-Basics\\node_modules\\@playwright\\test\\cli.js",
-      "test",
-      "./tests/test-annotations.spec.ts"
-    ],
+    "argv": [],
     "configFile": "G:\\PW-Basics\\playwright.config.ts",
     "rootDir": "G:/PW-Basics/tests",
     "failOnFlakyTests": false,
@@ -69,140 +64,57 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.61.1",
     "workers": 4,
     "webServer": null
   },
   "suites": [
     {
-      "title": "test-annotations.spec.ts",
-      "file": "test-annotations.spec.ts",
+      "title": "browser-sessions.spec.ts",
+      "file": "browser-sessions.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Login Test Case",
+          "title": "Open browser in dark mode",
           "ok": true,
           "tags": [],
           "tests": [
             {
               "timeout": 30000,
-              "annotations": [
-                {
-                  "type": "functional issue",
-                  "description": "Login button is not clickable so ignore the failure of the test case for now, created incident with id 1234",
-                  "location": {
-                    "file": "G:\\PW-Basics\\tests\\test-annotations.spec.ts",
-                    "line": 7,
-                    "column": 1
-                  }
-                },
-                {
-                  "type": "performance issue",
-                  "description": "Test case performance needs to be improved, created incident with id 5678",
-                  "location": {
-                    "file": "G:\\PW-Basics\\tests\\test-annotations.spec.ts",
-                    "line": 7,
-                    "column": 1
-                  }
-                }
-              ],
+              "annotations": [],
               "expectedStatus": "passed",
               "projectId": "chromium",
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 14,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2,
+                  "duration": 7395,
                   "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-20T08:21:19.868Z",
-                  "annotations": [
+                  "stdout": [
                     {
-                      "type": "functional issue",
-                      "description": "Login button is not clickable so ignore the failure of the test case for now, created incident with id 1234",
-                      "location": {
-                        "file": "G:\\PW-Basics\\tests\\test-annotations.spec.ts",
-                        "line": 7,
-                        "column": 1
-                      }
+                      "text": "https://rahulshettyacademy.com/seleniumPractise/#/\n"
                     },
                     {
-                      "type": "performance issue",
-                      "description": "Test case performance needs to be improved, created incident with id 5678",
-                      "location": {
-                        "file": "G:\\PW-Basics\\tests\\test-annotations.spec.ts",
-                        "line": 7,
-                        "column": 1
-                      }
+                      "text": "https://rahulshettyacademy.com/seleniumPractise/#/offers\n"
                     }
                   ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-24T06:37:12.252Z",
+                  "annotations": [],
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "8ff54ae642c9f388dcb2-4673399b74bf40c677b8",
-          "file": "test-annotations.spec.ts",
-          "line": 7,
-          "column": 1
-        },
-        {
-          "title": "Run time annotations",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [
-                {
-                  "type": "Browser Version",
-                  "description": "149.0.7827.55"
-                },
-                {
-                  "type": "ENVIRONMENT",
-                  "description": "Systest"
-                }
-              ],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-08-20T08:21:19.904Z",
-                  "annotations": [
-                    {
-                      "type": "Browser Version",
-                      "description": "149.0.7827.55"
-                    },
-                    {
-                      "type": "ENVIRONMENT",
-                      "description": "Systest"
-                    }
-                  ],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "8ff54ae642c9f388dcb2-65a669b8309cbf99b06c",
-          "file": "test-annotations.spec.ts",
-          "line": 21,
+          "id": "24a0e4306e5baf97c5b3-4f1e1eefe5d78b902c85",
+          "file": "browser-sessions.spec.ts",
+          "line": 70,
           "column": 1
         }
       ]
@@ -210,9 +122,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-20T08:21:19.390Z",
-    "duration": 895.857,
-    "expected": 2,
+    "startTime": "2026-08-24T06:37:11.168Z",
+    "duration": 9572.765000000596,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
