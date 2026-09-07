@@ -10,6 +10,9 @@ dotenv.config({ path: path.resolve(import.meta.dirname, '.env') });
  */
 export default defineConfig({
   testDir: './tests',
+  timeout: 40_000,
+  expect: { timeout: 10_000 },
+  globalTimeout: 20_000 * 10,
   /* Run tests in files in parallel */
   fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -40,6 +43,9 @@ export default defineConfig({
     trace: 'on-first-retry',
     headless: false,
     //video: 'on'
+    navigationTimeout: 50_000,
+    actionTimeout: 3_000,
+
 
 
   },
