@@ -44,7 +44,7 @@ export default defineConfig({
     headless: false,
     //video: 'on'
     navigationTimeout: 50_000,
-    actionTimeout: 3_000,
+    //actionTimeout: 3_000,
 
 
 
