@@ -36,13 +36,14 @@ testData.forEach((testData, index) => {
         const email: Locator = page.locator("input[name='email']");
         const password: Locator = page.locator("input#exampleInputPassword1");
 
-
         await firstName.clear();
         await firstName.pressSequentially(testData.name, { delay: 200 });
         await email.clear();
         await email.pressSequentially(testData.email, { delay: 200 });
         await password.clear();
         await password.pressSequentially(testData.password, { delay: 200 });
+
+        // In this case, there is an improvement needed for assertion, so we can not follow this kind of approach
 
     })
 

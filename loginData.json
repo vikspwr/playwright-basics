@@ -1,0 +1,23 @@
+[
+    {
+        "isValidLogin": "Valid",
+        "username": "Admin",
+        "password": "admin123",
+        "expected_result": "PASS",
+        "scenario": "valid"
+    },
+    {
+        "isValidLogin": "Invalid Login",
+        "username": "Admin",
+        "password": "admin",
+        "expected_result": "FAIL",
+        "scenario": "invalid"
+    },
+    {
+        "isValidLogin": "Invalid",
+        "username": "",
+        "password": "",
+        "expected_result": "FAIL",
+        "scenario": "emptyCreds"
+    }
+]
