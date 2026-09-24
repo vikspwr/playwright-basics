@@ -1,4 +1,11 @@
 
+// install 
+//  npm install xlsx
+
+// add xlsx plugin/extension to view xlsx from vs code (optional)
+// Note - if you don’t install it, you cannot view xlsx file inside vs code, to view the xlsx you need to open it from file explorer.
+
+
 import { test } from '@playwright/test'
 import XLSX from 'xlsx'
 import path from 'path'
