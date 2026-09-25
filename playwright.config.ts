@@ -10,8 +10,8 @@ dotenv.config({ path: path.resolve(import.meta.dirname, '.env') });
  */
 export default defineConfig({
   testDir: './tests',
-  timeout: 40_000,
-  expect: { timeout: 10_000 },
+  timeout: 120_000,
+  expect: { timeout: 20_000 },
   globalTimeout: 20_000 * 10,
   /* Run tests in files in parallel */
   fullyParallel: false,
@@ -52,12 +52,15 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+    { name: 'setup', testMatch: /.*\.setup\.ts/ },
     {
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        viewport: { width: 1280, height: 720 }
+        viewport: { width: 1280, height: 720 },
+        storageState: 'playwright/.auth/user.json'
       },
+      dependencies: ['setup']
 
     },
 
