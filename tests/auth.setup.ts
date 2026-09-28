@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 
 const authFile = path.join(__dirname, '../playwright/.auth/user.json');
 
-setup('Login Authentication', async ({ page }) => {
+setup.skip('Login Authentication', async ({ page }) => {
 
     const baseURL = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
     await page.goto(baseURL);
@@ -27,8 +27,7 @@ setup('Login Authentication', async ({ page }) => {
 
     await expect(dashboardLabel).toBeVisible();
 
+    // storing the state
     await page.context().storageState({ path: authFile })
-
-
 
 })
