@@ -45,6 +45,8 @@ export default defineConfig({
     //video: 'on'
     navigationTimeout: 50_000,
     //actionTimeout: 3_000,
+    //baseURL: "http://216.10.245.166"
+
 
 
 
